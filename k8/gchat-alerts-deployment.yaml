@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: gchat-alerts-container
-          image: msr.uabc.edu.mx/dit/gchat-alerts
+          image: gchat-alerts
           imagePullPolicy: Always          
           ports:
             - containerPort: 80
