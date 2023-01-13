@@ -22,3 +22,25 @@ spec:
           imagePullPolicy: Always          
           ports:
             - containerPort: 80
+          env:
+          - name: WEBHOOK_URL
+            value: "https://chat.googleapis.com/v1/spaces/AAAA43Nog24/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ymnLAHO-mjbOBcM7JEuxzFAUHf7xvSONk9kcULItyyc%3D"          
+          readinessProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /liveness
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 60
+          resources:
+            limits:
+              memory: 128Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
+      nodeSelector:
+        env: prod            

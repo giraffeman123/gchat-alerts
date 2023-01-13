@@ -7,6 +7,5 @@ services:
    - "80:80"
   environment:
    - TZ=America/Tijuana  
-  #env_file:
-  # - .env
+   - WEBHOOK_URL=https://chat.googleapis.com/v1/spaces/AAAA43Nog24/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=ymnLAHO-mjbOBcM7JEuxzFAUHf7xvSONk9kcULItyyc%3D
   network_mode: bridge
