@@ -3,7 +3,7 @@ const ip = require('ip');
 const log4js = require('log4js');
 const responseTemplates = require('../utils/responseTemplates');
 log4js.configure({
-    appenders: { service: { type: 'file', filename: './../service.log' } },
+    appenders: { service: { type: 'file', filename: './service.log' } },
     categories: { default: { appenders: ['service'], level: 'error' } },
 });
 const logger = log4js.getLogger('service');

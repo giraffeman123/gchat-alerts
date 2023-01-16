@@ -1,0 +1,1 @@
+[2023-01-16T11:22:40.383] [ERROR] service - {"timestamp":"Mon, 16 Jan 2023 19:22:40 GMT","code":400,"title":"Bad request","detail":"Ensure that alerts is included in the request","request":"::1","source":"172.25.176.1"}
