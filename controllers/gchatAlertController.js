@@ -5,7 +5,8 @@ const sendK8Alert = async (req, res) => {
     try {
         const body = await modules.gchatAlertService.sendK8Alert(req);
         res.status(200).json(body);
-    } catch (err) {        
+    } catch (err) {    
+        console.log(err);    
         return res.status(500).json(err);
     }       
 };

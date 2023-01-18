@@ -7,4 +7,4 @@ docker rmi gchat-alerts
 docker build -t gchat-alerts . 
 docker tag gchat-alerts msr.uabc.edu.mx/dit/gchat-alerts
 docker push msr.uabc.edu.mx/dit/gchat-alerts
-docker-compose up -d 
+::docker-compose up -d 
